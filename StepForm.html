@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <title>StepForm</title>
+    <link rel="stylesheet" href="StepForm.css">
+    
+   </head>
+
+   <body>
+    <script src="stepForm.js"></script>
+    <div class="container">
+        <header>Login Form</header>
+        <div class="progressBar">
+            <div class="step">
+               <p>Name</p> 
+               <div class="bullet">
+                <span>1</span>
+               </div>
+            </div>
+
+            <div class="step">
+                <p>Contact</p> 
+                <div class="bullet">
+                 <span>2</span>
+                </div>
+             </div>
+
+             <div class="step">
+                <p>Birth</p> 
+                <div class="bullet">
+                 <span>3</span>
+                </div>
+             </div>
+
+             <div class="step">
+                <p>Submit</p> 
+                <div class="bullet">
+                 <span>4</span>
+                </div>
+             </div>
+            
+             
+        </div>
+        <div class="formOuter">
+            <form>
+                <div class="page">
+                    <div class="title">Basic Info</div>
+                    <div class="field">
+                        <div class="label">First Name</div>
+                        <input type="text" id="FirstName" name="firstName">
+                    </div>
+
+                    <div class="field">
+                        <div class="label">Last Name</div>
+                        <input type="text" id="LastName" name="lastName">
+                    </div>
+                    <div class="field">
+                        <button  class="nextBtn">Next</button>
+                    </div>
+                </div>
+
+
+                <div class="page">
+                    <div class="title">Contact Info</div>
+                    <div class="field">
+                        <div class="label">Email Address</div>
+                        <input type="text" id="email" name="email">
+                    </div>
+
+                    <div class="field">
+                        <div class="label">Phone Number</div>
+                        <input type="number" id="phone" name="phoneNumber">
+                    </div>
+                    <div class="field">
+                        <button class="prevBtn">Previous</button>
+                        <button class="nextBtn">Next</button>
+                    </div>
+                </div>
+
+
+                <div class="page">
+                    <div class="title">Date of Birth</div>
+                    <div class="field">
+                        <div class="label">Date</div>
+                        <input type="text">
+                    </div>
+
+                    <div class="field">
+                        <div class="label">Gender</div>
+                        <select>
+                            <option>Male</option>
+                            <option>Female </option>
+                            <option>Non Binary</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <button class="prevBtn">Previous</button>
+                        <button class="nextBtn">Next</button>
+                    </div>
+                </div>
+
+
+                <div class="page">
+                    <div class="title">Login Details</div>
+                    <div class="field">
+                        <div class="label">Username</div>
+                        <input type="text">
+                    </div>
+
+                    <div class="field">
+                        <div class="label">Password</div>
+                        <input type="password">
+                    </div>
+                    <div class="field">
+                        <button class="prevBtn">Previous</button>
+                        <button class="submit">Submit</button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+    
+   </body>
+     
+</html>
