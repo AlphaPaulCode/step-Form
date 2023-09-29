@@ -130,7 +130,9 @@ form .page .Btns button .next{
     border: 2px solid #000;
     display: inline-block;
     border-radius: 50%;
+    transition: 0.2s;
 }
+ 
 .progressBar .step span{
     font-weight: 500;
     font-size: 17px;
@@ -138,6 +140,14 @@ form .page .Btns button .next{
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+}
+.progressBar .step .check{
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    font-size: 15px;
+    transform: translate(-50%, -50%);
+    display: none;
 }
 
 
