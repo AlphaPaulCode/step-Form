@@ -9,9 +9,9 @@ document.addEventListener("DOMContentLoaded", function () {
     let currentStep = 0;
   
     // Function to show the current step and hide other steps
-    function showStep(stepIndex) {
+    function showStep(steping) {
       steps.forEach((step, index) => {
-        if (index === stepIndex) {
+        if (index === steping) {
           step.style.display = "block";
         } else {
           step.style.display = "none";
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function updateProgressBar() {
     progressText.forEach((text, index) => {
       if (index < currentStep) {
-        text.style.color = "#51a351"; // Completed steps text color
+        text.style.color = "red"; // Completed steps text color
         progressCheck[index].style.display = "block"; // Show checkmark for completed steps
         bullet[index].classList.add("completed"); // Add completed class to the step bullet
       } else {

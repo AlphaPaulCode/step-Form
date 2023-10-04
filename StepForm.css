@@ -132,7 +132,9 @@ form .page .Btns button .next{
     border-radius: 50%;
     transition: 0.2s;
 }
- 
+.progressBar .step .bullet.active{
+    border-color: #e9c1c1;
+}
 .progressBar .step span{
     font-weight: 500;
     font-size: 17px;
