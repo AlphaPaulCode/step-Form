@@ -120,8 +120,9 @@ form .page .Btns button .next{
     right: -51px;
     height: 3px;
     width: 44px;
-    background: #000;
+    background: #e9c1c1;
 }
+
 .progressBar .step .bullet{
     position: relative;
     height: 25px;
@@ -129,6 +130,10 @@ form .page .Btns button .next{
     border: 2px solid #000;
     display: inline-block;
     border-radius: 50%;
+    transition: 0.2s;
+}
+.progressBar .step .bullet.active{
+    border-color: #e9c1c1;
 }
 .progressBar .step span{
     font-weight: 500;
@@ -138,3 +143,40 @@ form .page .Btns button .next{
     left: 50%;
     transform: translateX(-50%);
 }
+.progressBar .step .check{
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    font-size: 15px;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+/* Styles for screens up to 768px wide */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%; /* Adjust the width as needed */
+    }
+    
+    .formOuter form .page {
+        width: 100%;
+    }
+}
+
+/* Styles for screens up to 480px wide (mobile) */
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 30px 20px; /* Adjust the padding as needed */
+    }
+    
+    .formOuter form .field {
+        width: 100%; /* Make fields full width */
+    }
+    
+    .formOuter form .field input,
+    .formOuter form .field select {
+        width: 100%; /* Make inputs and selects full width */
+    }
+}
+
+
