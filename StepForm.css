@@ -152,4 +152,31 @@ form .page .Btns button .next{
     display: none;
 }
 
+/* Styles for screens up to 768px wide */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%; /* Adjust the width as needed */
+    }
+    
+    .formOuter form .page {
+        width: 100%;
+    }
+}
+
+/* Styles for screens up to 480px wide (mobile) */
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 30px 20px; /* Adjust the padding as needed */
+    }
+    
+    .formOuter form .field {
+        width: 100%; /* Make fields full width */
+    }
+    
+    .formOuter form .field input,
+    .formOuter form .field select {
+        width: 100%; /* Make inputs and selects full width */
+    }
+}
+
 
